@@ -123,6 +123,43 @@ header .fa-bars{
     display:block;
 }
 
+#toggler{
+    display:none;
+}
+
+.fa-bars{
+    font-size:3rem;
+    color:#333;
+    border-radius:.5rem;
+    padding:.5rem 1.5rem;
+    cursor:pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display:block;
+}
+
+header .navbar{
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:#fff;
+    border-top:.1rem solid rgba(0,0,0,.1);
+    display:none;
+    flex-direction:column;
+}
+
+#toggler:checked ~ .navbar{
+    display:flex;
+}
+
+header .navbar a{
+    padding:1.5rem;
+    margin:1rem;
+    background:#eee;
+    border-radius:.5rem;
+    font-size:2rem;
+}
+
 /* HOME */
 
 .home{
@@ -566,25 +603,16 @@ header .navbar a{
     gap: 1rem;
 }
 
-/* EXTRA SMALL DEVICES */
+.contact .row img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
 
-@media (max-width:450px){
-
-    html{
-        font-size:50%;
-    }
-
-    .heading{
-        font-size:3rem;
-    }
-
-    .home .content h3{
-        font-size:4rem;
-    }
-
-    .btn{
-        padding:.8rem 2rem;
-        font-size:1.5rem;
-    }
-
+.payment-img{
+    width: 250px;
+    height: auto;
 }
