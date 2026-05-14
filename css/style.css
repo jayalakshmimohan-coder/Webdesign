@@ -475,3 +475,116 @@ header .fa-bars{
 .footer .credit span {
     color: #e84393; /* Matching the pink text for the name */
 }
+
+/* MOBILE RESPONSIVE */
+
+html{
+    font-size: 55%;
+}
+
+section{
+    padding:2rem;
+}
+
+.home{
+    background-position: center;
+    background-size: cover;
+}
+
+.home .content{
+    max-width: 100%;
+    padding: 2rem;
+}
+
+.home .content h3{
+    font-size: 5rem;
+}
+
+.home .content span{
+    font-size: 2.5rem;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.about .row{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about .row .video-container video{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.about .row .content{
+    width: 100%;
+}
+
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .box img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    padding: 1.5rem 5%;
+}
+
+header .navbar{
+    position: absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:#fff;
+    border-top:.1rem solid rgba(0,0,0,.1);
+    display:none;
+    flex-direction: column;
+    text-align: center;
+}
+
+#toggler:checked ~ .navbar{
+    display:flex;
+}
+
+header .navbar a{
+    margin:1.5rem;
+    padding:1rem;
+    font-size:2rem;
+    display:block;
+}
+
+.icons{
+    gap: 1rem;
+}
+
+/* EXTRA SMALL DEVICES */
+
+@media (max-width:450px){
+
+    html{
+        font-size:50%;
+    }
+
+    .heading{
+        font-size:3rem;
+    }
+
+    .home .content h3{
+        font-size:4rem;
+    }
+
+    .btn{
+        padding:.8rem 2rem;
+        font-size:1.5rem;
+    }
+
+}
