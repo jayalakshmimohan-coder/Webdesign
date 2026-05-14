@@ -240,6 +240,35 @@ header .navbar a{
     overflow:hidden;
     text-align:center;
 }
+.image-box {
+    position: relative; /* Idhu thaan buttons-ai image mela vaikka help pannum */
+}
+
+.action-bar {
+    position: absolute; /* Buttons image mela 'float' aagum */
+    bottom: 0;          /* Image-in adipagathil irukkum */
+    width: 100%;
+    display: flex;
+}
+
+.pink-btn {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    flex: 1;
+}
+
+.cart-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    flex: 3; /* 'Add To Cart' button perithaaga irukka */
+}
+
+.details {
+    padding: 10px;
+    background: white; /* Price-ai clear-ah kaatum */
+}
 
 /* DISCOUNT */
 
